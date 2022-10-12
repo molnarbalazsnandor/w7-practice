@@ -1,7 +1,8 @@
 console.log("loaded");
 
-let fetchURL =
-  "https://api.nasa.gov/planetary/apod?api_key=uJpGIKfiHk9wuvj0wfw7zO9z7W3rFnslH31HrwLZ";
+const apiKey = "uJpGIKfiHk9wuvj0wfw7zO9z7W3rFnslH31HrwLZ";
+let apiDate = "2022-10-12";
+let fetchURL = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${apiDate}`;
 
 /* fetch(fetchURL).then(function (response) {
   console.log(response);
